@@ -5,7 +5,7 @@ import example_utils
 
 
 def main():
-    address, info, exchange = example_utils.setup(base_url=constants.TESTNET_API_URL, skip_ws=True)
+    address, info, exchange = example_utils.setup(base_url=constants.MAINNET_API_URL, skip_ws=True)
 
     # Get the user state and print out position information
     user_state = info.user_state(address)
@@ -20,7 +20,7 @@ def main():
         print("no open positions")
 
     # Place an order that should rest by setting the price very low
-    order_result = exchange.order("ETH", True, 0.2, 1100, {"limit": {"tif": "Gtc"}})
+    order_result = exchange.order("ETH", True, 0.1, 1100, {"limit": {"tif": "Gtc"}})
     print(order_result)
 
     # Query the order status by oid
