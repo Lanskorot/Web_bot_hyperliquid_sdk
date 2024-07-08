@@ -6,6 +6,12 @@ import os
 from hyperliquid.exchange import Exchange
 from hyperliquid.info import Info
 
+coin = "ETH"
+sz = 0.01
+limit_price_buy = 0
+limit_price_sell = 0
+
+
 
 def setup(base_url=None, skip_ws=False):
     config_path = os.path.join(os.path.dirname(__file__), "config.json")
