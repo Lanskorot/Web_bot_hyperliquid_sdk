@@ -1,4 +1,28 @@
-# hyperliquid-python-sdk
+# Web_bot_hyperliquid_sdk
+
+Sdk файл для работы стратегии с биржей hyperliquid
+
+## Для работы нужно установить зависимости 
+```
+pip install hyperliquid-python-sdk
+```
+____
+#### После этого установить ключи в файле Web_bot_hyperliquid_sdk
+/examples/config.gson
+
+Требуется установить {"secret_key": "",
+                    "account_address": ""}
+Сам рабочий скрипт находится тут : 
+#### /examples/web_strategy.py
+____
+у меня этот SDk работает на версии **python 3.8.19**
+____
+# На  основании  этого SDK
+
+
+
+
+## hyperliquid-python-sdk
 
 <div align="center">
 
